@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* Reset */
+*{
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a              { text-decoration: none; }
+a:link         { color: #333; }
+a:visited      { color: #333; }
+a:hover        { color: #444; }
+a:active       { color: #555; }
+ul             { list-style: none; }
+
+/* Reset */
+
+
+div#warp{
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+/* 싱글탭 시작 */
+div#tabArea{  /* 탭버튼과 탭내용을 둘러싼 외부 */
+    width: 330px;
+    padding: 10px;
+    margin: 10px;
+/*    border: 1px solid #08f;*/
+}
+button{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border: 1px solid #aaa; /* 버튼의 테두리는 약간 둥근데 테두리선을 넣어주면 직각이 됨*/
+    border-bottom: none;
+    margin-left: 30px; /* position에서 top left대신에 옆에 다른 버튼도 와야하니 ml걸어주는게 좋음*/
+
+    position: relative;
+    top: 1px; /* 버튼이 3차원에 있어 2차원의 content를 덮여 씀 */
+}
+div#tabArea > div#tabContent1 {
+    padding: 26px 10px;
+    border: 1px solid #aaa;
+
+    display: inline-block; /* width를 쓰지 않고 사진크기에 맞춰 테두리만들기 위해 만약 width를 지정한다면 이미지의 크기가 달라지면 또 계산해야 하니깐 */
+}
+/* 싱글탭 끝 */
+
